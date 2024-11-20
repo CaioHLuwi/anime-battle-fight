@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Background scenario from the game */
+
+.game-container {
+    background-image: url(/assets/images/background.jpg);;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.topview {
+    padding: 15px 0 0 0;
+    gap: 25px;
+    display: flex;
+    width: 100%;
+    color: #fff;
+}
+/* Life bar styles */
+
+.life-bar {
+    background-color: #5a0303;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.bar {
+    background: linear-gradient(#15fc00, #02be3b);
+    padding: 5px;
+    height: 20px;
+    border-radius: inherit;
+}
+
+
+.score {
+    background-color: #131212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 50px;
+    height: 70px;
+    gap: 5px;
+}
+
+.score span {
+    color: #fff;
+}
+
+#ally-status {
+    margin: 5px 0px 0px 5px;
+    flex: 1;
+}
+
+#ally-status .status {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+
+#ally-status .attributes {
+    gap: 15px;
+    display: flex;
+}
+
+/* Enemy styles*/
+
+#enemy-status {
+    margin: 5px 5px 0px 0px;
+    flex: 1;
+}
+
+#enemy-status .status {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.name,
+.attributes .attribute-item {
+    border-radius: 5px;
+    background-color: rgb(44, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+
+#enemy-status .attributes {
+    gap: 10px;
+    display: flex;
+}
+
+#enemy-status .name {
+    right: 0;
+    gap: 10px;
+}
+
+.scenario-char {
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+}
+
+.char-area img{
+    height: 300px;
+    width: auto;
+}
+
+.visual-area {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-direction: column;
+}
+
+.char-bottom-area button{
+    margin-top: 25px;
+    background-color: rgb(112, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer ;
+}
+
+.log-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.log-area {
+    margin-top: 15px;
+    width: 80%;
+    height: 410px;
+    background-color: #161616;
+    border-radius: 50px;
+}
+
+.log-area h2{
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Kimetsu Fight</title>
+</head>
+
+<body>
+    <div class="game-container">
+        <section class="topview">
+            <div id="ally-status">
+                <div class="life-bar">
+                    <div class="bar" style="width: 10%;"></div>
+                </div>
+                <div class="status" id="statusChar1">
+                    <div class="name" id="nameCharacter1"> </div>
+                    <div class="attributes">
+                        <div class="attribute-item">
+                            <i class="bi bi-shield-shaded"></i> <span id="defense"> </span>
+                        </div>
+                        <div class="attribute-item">
+                            <i class="bi bi-fire"></i> <span id="power">  </span>
+                        </div>
+                        <div class="attribute-item">
+                            <i class="bi bi-heart-fill"></i> <span id="life">
+                                --
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="enemy-status">
+                <div class="life-bar">
+                    <div class="bar" style="width: 10%;"></div>
+                </div>
+                <div class="status" id="statusChar2">
+                    <div class="name" id="nameCharacter2"> </div>
+                    <div class="attributes">
+                        <div class="attribute-item">
+                            <i class="bi bi-heart-fill"></i> <span id="life">
+                                --
+                            </span>
+                        </div>
+                        <div class="attribute-item">
+                            <i class="bi bi-fire"></i> <span id="power">  </span>
+                        </div>
+                        <div class="attribute-item">
+                            <i class="bi bi-shield-shaded"></i> <span id="defense"> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scenario-char">
+            <div class="visual-area">
+                <div class="char-area">
+                    <img src="assets/images/nezuko.png" alt="">
+                </div>
+                <div class="char-bottom-area">
+                    <button id="btn-attack-ally"> Atacar </button>
+                </div>
+            </div>
+            <div class="visual-area">
+                <div class="char-area">
+                    <img src="assets/images/tomioka.png" alt="">
+                </div>
+                <div class="char-bottom-area">
+                    <button id="btn-attack-enemy"> Atacar </button>
+                </div>
+            </div>
+        </section>
+        <section class="log-container">
+            <div class="log-area">
+                <h2> Histórico da luta </h2> 
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/classes.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
