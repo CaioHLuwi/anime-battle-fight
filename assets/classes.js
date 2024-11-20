@@ -68,11 +68,11 @@ class Phase {
         this.enemyElement.querySelector('.bar').style.width = `${(this.enemy.life / this.enemy.maxLife) * 100}%`;
 
         // Definir os atributos no css
-        this.allyElement.querySelector('#life').innerText = ally.life;
+        this.allyElement.querySelector('#life').innerText = ally.life.toFixed(2);
         this.allyElement.querySelector('#power').innerText = ally.power;
         this.allyElement.querySelector('#defense').innerText = ally.defense;
 
-        this.enemyElement.querySelector('#life').innerText = enemy.life;
+        this.enemyElement.querySelector('#life').innerText = enemy.life.toFixed(2);
         this.enemyElement.querySelector('#power').innerText = enemy.power;
         this.enemyElement.querySelector('#defense').innerText = enemy.defense;
     }
@@ -91,12 +91,13 @@ class Phase {
         let actualDefense = attacked.defense * defenseFactor; // Número aleatório multiplicando a defesa atual do defensor para dar randomização ao jogo
 
         if(actualPower > actualDefense) {
+            attacking.life -= actualPower
             console.log(`${attacking.name} conseguiu atacar ${attacked.name} e causou ${actualPower}`);
         } else {
             console.log(`${attacked.name} conseguiu defender.`)
         }
 
-        //TODO: 
+        //TODO: Implementar um log para receber todos esses registros e melhores imagens / sons no projeto.
 
         this.update()
     }
