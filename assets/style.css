@@ -161,3 +161,11 @@ body {
     text-align: center;
     color: #fff;
 }
+
+.log-item{
+    color: #fff;
+}
+
+.wins {
+    color: #15fc00;
+}
